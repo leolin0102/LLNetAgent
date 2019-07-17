@@ -6,7 +6,7 @@ const initValues = {
     'requestList': [
         {"name": "login", "desc": "登录请求"}, 
         {"name": "logout", "desc": "登出请求"},
-        {"name": "add Request", "desc": ""}
+        {"name": "add Request", "desc": "新建请求"}
     ]
 }
 

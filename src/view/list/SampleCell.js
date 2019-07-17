@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import './ListView.css'
+import store from '../../Store';
 class SampleCell extends Component {
 
     constructor(props) {
@@ -12,11 +13,14 @@ class SampleCell extends Component {
 
     render() {
         return (
-            <div>
-                <li>{this.state.name}</li>
-                <li>{this.state.desc}</li>
+            <div onClick={this.onClickItem} className="SampleCell">
+                <li className="SampleCell-Item-name">{this.state.name}</li>
+                <li className="SampleCell-item-desc">{this.state.desc}</li>
             </div>
         )
+    }
+
+    onClickItem(e) {
     }
 }
 

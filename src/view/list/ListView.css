@@ -1,0 +1,20 @@
+
+.SampleCell:hover {
+    background-color: darkslategrey;
+}
+
+li {
+    list-style: none;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.SampleCell-item-name {
+    font-size: 18px;
+}
+
+.SampleCell-item-desc {
+    font-size: 14px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+}

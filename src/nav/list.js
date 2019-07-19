@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './list.css'
 import store from '../Store';
 import ListView from '../view/list/ListView'
+import { ContextMenu, MenuItem, ContextMenuTrigger } from "react-contextmenu";
 class SideNav extends Component {
 
     constructor(props) {
@@ -18,13 +19,22 @@ class SideNav extends Component {
                 <div className="SideNav-TopBar">
                     {this.state.title}
                 </div>
-                <div className="SideNav-SideLine">
-                </div>
-                <ListView items={this.state.items}>
+                <ContextMenuTrigger id="menu">
+                    <ListView items={this.state.items}>
 
-                </ListView>
+                    </ListView>
+                </ContextMenuTrigger>
+                <ContextMenu id="menu">
+                    <MenuItem data={{action: 'add_request'}} onClick={this.handleClick}>
+                        add request
+                    </MenuItem>
+                </ContextMenu>
             </div>
         );
+    }
+
+    handleClick(e, data) {
+        console.log(data.foo);
     }
 }
 

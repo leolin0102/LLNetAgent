@@ -6,3 +6,10 @@ export const post = (params) => {
         params: {"aaa": "bbb"}
     }
 }
+
+export const addRequest = (params) => {
+    return {
+        type: ActionTypes.ADD_REQUEST,
+        params: {"name": "url", "desc": ""}
+    }
+}

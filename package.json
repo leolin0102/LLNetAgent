@@ -5,7 +5,7 @@
   "main": "main.js",
   "homepage": ".",
   "dependencies": {
-    "electron": "^1.8.8",
+    "electron": "^15.5.5",
     "react": "^16.8.6",
     "react-contextmenu": "^2.11.0",
     "react-dom": "^16.8.6",
